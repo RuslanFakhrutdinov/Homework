@@ -11,7 +11,11 @@ if(a > b)
 {
     Console.WriteLine($"Число {a} большее");
 }
-else
+else if(a == b)
+{
+    Console.WriteLine("Эти числа равны");
+}
+else if(a < b)
 {
     Console.WriteLine($"Число {b} большее");
 }
