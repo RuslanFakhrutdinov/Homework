@@ -8,18 +8,22 @@ Console.WriteLine("Введите второе число:");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число:");
 int c = Convert.ToInt32(Console.ReadLine());
-int max = a;
+int max;
 if(a == b && b == c)
 {
     Console.WriteLine("Все эти числа равны");
 }
 else
 {
-    if(max < b)
+    if(a > b)
+    {
+        max = a;
+    }
+    else
     {
         max = b;
     }
-    else if(max < c)
+    if(max < c)
     {
         max = c;
     }
